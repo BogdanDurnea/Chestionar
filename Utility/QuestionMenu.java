@@ -26,7 +26,7 @@ public class QuestionMenu {
         int note = 0;
         for (Integer questionNumber : myRandomQuestionNumber) {
             // call in baza de date si aduci intrebarea respectiva
-            Question question = findByID(myRandomQuestionNumber);
+            Question question = findByID();
             // metoda de afisare
             // scan raspuns si verificare daca e corect -> note++
             String customerInput = myRandomQuestionNumber.toString();
@@ -36,15 +36,14 @@ public class QuestionMenu {
                 List<Question> wronQuestion = new ArrayList<>();
                 wronQuestion.add(question);
             }
-            // String question, String answer, correct.answer
+            // String question, String answerA,B,C,D, correct.answer
         }
 
         System.out.println(note + "/10");
 
     }
 
-    private static Question findByID(List<Integer> myRandomQuestionNumber) {
-        Question QuestionMenu = new Question();
-        return QuestionMenu;
+    private static Question findByID() {
+        return new Question();
     }
 }
