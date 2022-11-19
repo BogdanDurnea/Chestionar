@@ -1,9 +1,8 @@
-package QuestionsFinalExam.Utility.SessionFactory;
-import QuestionsFinalExam.Utility.Models.Question;
+package QuestionsFinalExam.Utility.src.SessionFactory;
+import QuestionsFinalExam.Utility.src.Models.Question;
 import org.hibernate.cfg.Configuration;
 public class SessionFactory extends AbstractSessionManager {
     private static final SessionFactory INSTANCE = new SessionFactory();
-    public SessionFactory() {}
     public static org.hibernate.SessionFactory getSessionFactory() {
         return INSTANCE.getSessionFactory("chestionar");
     }

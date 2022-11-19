@@ -1,4 +1,4 @@
-package QuestionsFinalExam.Utility.Models;
+package QuestionsFinalExam.Utility.src.Models;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -74,4 +74,33 @@ public class Question {
     }
 
     private List<Question>question;
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setAnswerA(String answerA) {
+        this.answerA = answerA;
+    }
+
+    public void setAnswerB(String answerB) {
+        this.answerB = answerB;
+    }
+
+    public void setAnswerC(String answerC) {
+        this.answerC = answerC;
+    }
+
+    public void setAnswerD(String answerD) {
+        this.answerD = answerD;
+    }
+
+    public void setCorrectAnswer(String correctAnswer) {
+        this.correctAnswer = correctAnswer;
+    }
+
+    public void setQuestion(List<Question> question) {
+        this.question = question;
+    }
 }
+

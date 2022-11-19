@@ -1,4 +1,6 @@
-package QuestionsFinalExam.Utility.Utility;
+package QuestionsFinalExam.Utility.src;
+
+import QuestionsFinalExam.Utility.src.Utility.QuestionMenu;
 
 public class Main {
 

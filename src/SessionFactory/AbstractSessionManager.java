@@ -1,4 +1,4 @@
-package QuestionsFinalExam.Utility.SessionFactory;
+package QuestionsFinalExam.Utility.src.SessionFactory;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
@@ -19,14 +19,14 @@ import java.util.Properties;
         private static final String DATABASE_HBM2DDL_AUTO = "update";
         private SessionFactory sessionFactory;
         protected abstract void setAnnotatedClasses(Configuration configuration);
-        protected SessionFactory getSessionFactory(String databaseName) {
+        protected SessionFactory getSessionFactory(String chestionar) {
             if (sessionFactory == null) {
                 try {
                     Configuration configuration = new Configuration();
                     // Hibernate settings equivalent to hibernate.cfg.xml's properties
                     Properties settings = new Properties();
                     settings.put(Environment.DRIVER, DATABASE_DRIVER);
-                    settings.put(Environment.URL, DATABASE_HOST.concat(databaseName));
+                    settings.put(Environment.URL, DATABASE_HOST.concat(chestionar));
                     settings.put(Environment.USER, DATABASE_USERNAME);
                     settings.put(Environment.PASS, DATABASE_PASSWORD);
                     settings.put(Environment.DIALECT, DATABASE_DIALECT);

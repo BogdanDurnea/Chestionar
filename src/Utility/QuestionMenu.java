@@ -1,6 +1,6 @@
-package QuestionsFinalExam.Utility.Utility;
+package QuestionsFinalExam.Utility.src.Utility;
 
-import QuestionsFinalExam.Utility.Models.Question;
+import QuestionsFinalExam.Utility.src.Models.Question;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,9 +8,7 @@ import java.util.Objects;
 import java.util.Random;
 
 public class QuestionMenu {
-    public static void main(String[] args) {
 
-    }
     public static void start() {
         // design baza de date
         // entitatea Question
